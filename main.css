@@ -1,0 +1,159 @@
+/* Câu 1 */
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.list{
+    list-style-type: none;
+    width: 300px;
+}
+.list li{
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    background-color: #77777766;
+    padding: 10px 20px;
+}
+.list li:last-child{
+    border-bottom: 2px solid #000;
+}
+.list li:hover{
+    color: azure;
+    background-color: blue;
+}
+
+.home{
+    list-style-type: none;
+    display: flex;
+}
+.home li:first-child{
+    margin-left: 0;
+}
+.home li{
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #77777766;
+}
+.home li:hover{
+    color: #fff;
+    background-color: brown;
+}
+
+/* Câu 2 */
+
+
+table{
+    border-spacing: 0;
+}
+thead tr{
+    background-color: green;
+    color: #fff;
+}
+th , td{
+    padding: 10px 20px;
+    text-align: left;
+}
+td{
+    border-bottom: 1px solid #777;
+}
+
+/* Câu 3 */
+
+.inner-head{
+    width: 100%;
+    background-color: red;
+    border-radius: 20px;
+}
+.inner-head ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.inner-head ul li{
+    padding: 19px 20px;
+    color: #fff;
+}
+/* Câu 4 */
+.inner-box{
+    width: 100%;
+    height: 600px;
+    background-color: #77777772;
+    position: relative;
+}
+
+.inner-box .box{
+    padding: 20px 40px;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 25px;
+}
+.inner-box .box1{
+    background-color: orange;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.inner-box .box2{
+    background-color: red;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.inner-box .box3{
+    background-color: blue;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.inner-box .box4{
+    background-color: green;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+/* Cau 5 */
+.inner-text{
+    color: #fff;
+    margin: 30px 0;
+    padding: 30px;
+    background-color: rgba(0, 0, 255, 0.495);
+    position: relative;
+}
+.inner-text::first-letter{
+    font-size: 40px;
+}
+.inner-text::first-line{
+    font-size: 25px;
+}
+.inner-text::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 100rem;
+    background-color: blue;
+    position: absolute;
+    z-index: -1;
+}
+.inner-text::after{
+    content: "";
+    width: 90px;
+    height: 90px;
+    border-radius: 100rem;
+    background-color: blue;
+    position: absolute;
+    z-index: -1;
+    bottom: 30px;
+    right: 30px;
+}
